@@ -3,7 +3,7 @@ import React from 'react'
 
 const CustomPagination = ({ setPage,page }) => {
 
-    const btnArray = Array.from({length:12},(x,i)=>i+1)
+    const btnArray = Array.from({length:10},(x,i)=>i+1)
 
   const handlePageChange = (page) => {
     setPage(page)
