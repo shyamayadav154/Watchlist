@@ -37,7 +37,7 @@ From the repo:
 
 
 ## Features To-Add
-* Firebase Login
+* Firebase Login and Storage
 * Show Watchtime in Watched and Watchlist Page
 * Add infinite scroll in Landing Page
 * Add fiter Badge in Movie, Series and Anime Page
