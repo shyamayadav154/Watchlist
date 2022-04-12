@@ -8,13 +8,7 @@ const Add = () => {
   const [results, setResults] = useState([])
   const inputRef = useRef(null)
 
-
-  const onChange = (e) => {
-    e.preventDefault()
-    setQuery(e.target.value)
-
-
-      const fetchSearch =() =>{
+   const fetchSearch =() =>{
  fetch(
    `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&page=1&include_adult=false&query=${e.target.value}`
  )
@@ -25,19 +19,18 @@ const Add = () => {
      } else {
        setResults([])
      }
-     console.log(data)
+ 
    })
       }
-    
-   let timer;
-   return function(){
-    
-     clearTimeout(timer)
-     timer = setTimeout(()=>{
-      fetchSearch()
-     },300)
 
-   }
+
+  const onChange = (e) => {
+    e.preventDefault()
+    setQuery(e.target.value)
+
+
+     
+    fetchSearch()
 
   }
 

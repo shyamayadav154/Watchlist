@@ -31,7 +31,7 @@ export const GlobalProvider = (props) => {
   useEffect(()=>{
  let viewportWidth = window.innerWidth
  setWidth(viewportWidth)
- console.log(viewportWidth)
+
   },[])
 
   //actions

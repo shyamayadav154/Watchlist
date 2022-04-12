@@ -24,7 +24,7 @@ const Trending = () => {
       `https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_TMDB_KEY}&page=${page}`
     )
     const data = await response.json()
-    console.log(data)
+ 
     setContent(data.results)
     setTimeout(() => {
       setLoading(false)

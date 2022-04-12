@@ -1,10 +1,4 @@
-//entry -> output
 
-// const path = require('path')
-
-// const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-
-// console.log(path.join(__dirname, 'public'))
 
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { EnvironmentPlugin } = require('webpack')

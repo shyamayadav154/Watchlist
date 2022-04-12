@@ -34,7 +34,7 @@ const SingleContent = () => {
       `https://api.themoviedb.org/3/${type}/${id}?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US`
     )
     const data = await res.json()
-    console.log(data, 'content')
+
     setContent(data)
     setTimeout(() => {
       setLoading(false)
@@ -52,7 +52,7 @@ const SingleContent = () => {
     )
     const data = await res.json()
 
-    console.log(data)
+
     setCasts(data.cast)
   }
 

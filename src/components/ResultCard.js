@@ -2,7 +2,7 @@ import React from 'react'
 import { useGlobalContext } from '../context/globalStat';
 
 const ResultCard = ({movie}) => {
-    console.log(movie);
+   
 
     const { addMovieToWatchList, watchlist, watched } =
       useGlobalContext()
