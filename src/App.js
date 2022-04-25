@@ -17,13 +17,16 @@ import Series from './pages/Series'
 import Movies from './pages/Movies'
 import Anime from './pages/Anime'
 import SingleContent from './pages/SingleContent'
-
+import {Helmet} from "react-helmet";
 import { AnimatePresence, motion } from 'framer-motion'
 
 function App() {
   let location = useLocation()
   return (
     <GlobalProvider>
+      <Helmet>
+         <link rel="icon" type="image/x-icon" href="/public/favicon.ico"/>
+      </Helmet>
       <Header />
       <AnimatePresence exitBeforeEnter initial={false}>
         <Routes location={location} key={location.pathname}>

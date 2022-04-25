@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import SingleContentLoader from '../components/singleContentLoader'
 import { useGlobalContext } from '../context/globalStat'
 import { motion } from 'framer-motion'
-const img500 = 'https://image.tmdb.org/t/p/w500/'
+const img500 = 'https://image.tmdb.org/t/p/original/'
 
 const SingleContent = () => {
   const par = useParams()
